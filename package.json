@@ -1,6 +1,7 @@
 {
   "name": "crypto-monitor",
   "version": "1.0.0",
+  "description": "Cryptocurrency monitoring cli",
   "main": "index.js",
   "license": "MIT",
   "author": "Hugo Cardoso <hugorafaelmc@gmail.com> (https://hcardoso.com.br)",
@@ -10,6 +11,10 @@
     "moment": "^2.29.1",
     "node-notifier": "^10.0.0",
     "terminal-kit": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hugo-cardoso/crypto-monitor"
   },
   "bin": {
     "crypto": "./index.js"
