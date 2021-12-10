@@ -1,0 +1,17 @@
+{
+  "name": "crypto-monitor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Hugo Cardoso <hugorafaelmc@gmail.com> (https://hcardoso.com.br)",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "commander": "^8.3.0",
+    "moment": "^2.29.1",
+    "node-notifier": "^10.0.0",
+    "terminal-kit": "^2.3.0"
+  },
+  "bin": {
+    "crypto": "./index.js"
+  }
+}
