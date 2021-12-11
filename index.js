@@ -40,7 +40,7 @@ const init = (coins, currency) => {
     term.clear();
   
     term.table([
-      ['ID', 'Actual Price', '24hs % change'],
+      ['ID', 'Current Price', '24hs % change'],
       ...coins.map(watch => ([
         watch,
         formatPrice(prices[watch][currency.toLocaleLowerCase()], currency),
