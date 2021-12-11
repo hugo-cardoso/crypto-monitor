@@ -17,6 +17,6 @@
     "url": "https://github.com/hugo-cardoso/crypto-monitor"
   },
   "bin": {
-    "crypto": "./index.js"
+    "crypto-monitor": "./index.js"
   }
 }
