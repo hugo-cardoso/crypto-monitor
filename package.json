@@ -1,6 +1,6 @@
 {
   "name": "@tunadao1/crypto-monitor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Cryptocurrency monitoring cli",
   "main": "index.js",
   "license": "MIT",
