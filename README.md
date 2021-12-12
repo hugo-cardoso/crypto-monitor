@@ -2,7 +2,7 @@
 
 A simple crypto coins monitor for your terminal.
 
-<img src="./thumb.png" width="800"/>
+<img src="./thumb.gif" width="800"/>
 </br>
 
 ## How to Install
