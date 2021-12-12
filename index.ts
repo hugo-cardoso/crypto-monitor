@@ -1,8 +1,8 @@
+#!/usr/bin/env node
+
 import { program } from 'commander';
 import { App } from './src/app';
 import { version } from './package.json';
-
-program.version(version);
 
 program
   .command('watch [coins]')
@@ -14,3 +14,5 @@ program
       options.currency || 'BRL'
     )
   });
+
+program.version(version);
