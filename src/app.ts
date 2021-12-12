@@ -18,13 +18,17 @@ export class App {
     this.init();
   }
 
-  init() {
+  async init() {
     this.renderLoading();
 
-    setInterval(async () => {
+    const cycle = async () => {
       const tokenList = await this.coinGeckoService.getCoinsPrice(this.tokenIdList, this.currency);
       this.render(tokenList);
-    }, this.updateInterval * 1000);
+    };
+
+    cycle();
+
+    setInterval(async () => await cycle(), this.updateInterval * 1000);
   }
 
   renderLoading() {
@@ -33,7 +37,7 @@ export class App {
   }
 
   render(tokenList: TokenList) {
-    const formatPercentage = (percentage: number) => chalk[percentage >= 0 ? 'green' : 'red'](percentage.toFixed(2));
+    const formatPercentage = (percentage: number) => chalk[percentage >= 0 ? 'green' : 'red'](`${ percentage.toFixed(2) }%`);
 
     console.clear();
 
